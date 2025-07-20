@@ -1,0 +1,32 @@
+<%- include('header') %>
+
+   <div class="blogHeading">
+    <h1>Blog Arena</h1>
+     <p class="welcomeNote">Here Are Your Blogs!</p>
+   </div>
+   
+   <div class="flexUp">
+<% blogPosts.forEach((blogPosts) => { %>
+  
+  <div class="blogPost">
+    <h2>Title: <%= blogPosts.blogTitle %></h2>
+    <h4>By: <%= blogPosts.authorName %></h4>
+    <p> <%= blogPosts.content %></p>
+  
+    <div class="blogPostDate">
+      
+    <form action="/delete/<%= blogPosts.id %>" method="POST">
+      <input  type="hidden" name="blogID" value="<%= blogPosts.id %>">
+      <button class="delete" type="submit">DELETE</button>
+    </form>
+    
+    <a href="/edit/<%= blogPosts.id %>">EDIT</a> 
+    </div>
+    </div>
+     <% });%>
+  </div>
+   <a class="fab-btn" href="/" class="new-btn">
+   <button>Create New Blog</button>
+   </a>
+
+<%- include('footer') %> 

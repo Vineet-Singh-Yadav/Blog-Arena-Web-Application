@@ -1,0 +1,22 @@
+<%- include('header') %>
+<div class="container">
+    <h1>Welcome to the Blog Arena</h1>
+    <p class="welcomeNote">Share your thoughts and ideas with the world!</p>
+    </div>
+
+<div class="blogArea">
+  <form action="/submit" method="POST">
+    <label for="Title">Blog Title:</label><br>
+    <input type="text" name="BlogTitle" required>
+    <br>
+    <label for="Author">Author Name:</label><br>
+    <input type="text" name="Author_Name" required>
+    <br>
+    <label for="content">Blog Content:</label><br> 
+    <textarea  name="Content" id="Content" rows="10" cols="79" required></textarea>
+    <br>
+    <input class="inputButton" type="submit" value="OK">
+  </form>
+</div>
+
+<%- include('footer') %> 

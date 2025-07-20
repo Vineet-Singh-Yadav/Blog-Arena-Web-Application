@@ -1,0 +1,80 @@
+.EditContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    font: 19px sans-serif; 
+}
+
+.EditContainer h1{
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.EditContainer p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    max-width: 600px;
+}
+
+.EditBlogArea{ 
+    position: relative;
+    top: 10rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    width: 100%;
+}
+
+.EditBlogArea form {
+    width: 80%;
+    max-width: 600px;
+    background-color:tan;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    opacity: 0.8;
+}
+
+
+.EditBlogArea form input{
+    display: block;
+    margin-top: 0%;
+}
+.EditInputButton {
+    background-color:chocolate;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left:16em ;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    opacity: 0.8;
+}
+
+@media(max-width: 600px){
+    #Content{
+     width: 90% !important;
+     max-width: 100% !important;
+    }
+
+    .EditInputButton {
+    display: block;          
+    margin: 20px auto;       
+    width: 60%;              
+    font-size: 16px;   
+    margin-top: 1rem !important;
+          
+  }
+}

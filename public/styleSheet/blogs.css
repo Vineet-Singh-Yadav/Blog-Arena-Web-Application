@@ -1,0 +1,148 @@
+
+.blogHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    font: 19px sans-serif;
+    
+}
+
+.blogHeading h1{
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.blogHeadings p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    max-width: 600px;
+}
+
+
+.blogPost{ 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+    background-color: tan;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 2rem
+
+    
+}
+.blogPost h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.blogPost h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    margin-top: 0%;
+}
+
+.blogPost p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 0%;
+}  
+
+
+.flexUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
+    gap: 2rem;
+    height: min-content;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+div a{
+    background-color:chocolate;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+div a:hover {
+    background-color: rgb(99, 56, 16); 
+    color: white;
+}
+
+.delete{
+    background-color:chocolate;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    opacity: 0.8;
+}
+
+.delete:hover {
+    background-color: rgb(99, 56, 16); 
+    color: white;
+}
+ 
+.blogPostDate {
+   display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+.fab-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: chocolate; 
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.fab-btn:hover {
+  background-color: rgb(99, 56, 16)S;
+}
+
+.fab-btn button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}

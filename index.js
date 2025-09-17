@@ -56,7 +56,7 @@ app.post('/edit', (req, res) => {
   });
   // Here you would typically save the blog post to a database
   console.log("blogTitle:" + BlogTitle, "Content:" + Content, "Author_Name:" + Author_Name);
-  res.render('blogs.ejs',{ blogPosts});
+  res.redirect('/blogs');
 });
 
 app.listen(PORT, () => {

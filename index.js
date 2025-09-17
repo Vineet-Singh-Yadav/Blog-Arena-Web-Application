@@ -47,17 +47,25 @@ app.get('/blogs', (req, res) => {
 });
 
 app.post('/edit', (req, res) => {
-  const { BlogTitle, Author_Name,Content} = req.body;
-  blogPosts.push({
-    id: blogID++,
-    blogTitle: BlogTitle,
-    authorName: Author_Name,
-    content: Content
-  });
-  // Here you would typically save the blog post to a database
-  console.log("blogTitle:" + BlogTitle, "Content:" + Content, "Author_Name:" + Author_Name);
+  const { id, BlogTitle, Author_Name, Content } = req.body;
+
+  // Find the blog by id
+  const blogIndex = blogPosts.findIndex(blog => blog.id === parseInt(id));
+
+  if (blogIndex !== -1) {
+    // Update the existing blog
+    blogPosts[blogIndex].blogTitle = BlogTitle;
+    blogPosts[blogIndex].authorName = Author_Name;
+    blogPosts[blogIndex].content = Content;
+
+    console.log("Updated Blog:", blogPosts[blogIndex]);
+  } else {
+    console.log("Blog not found with id:", id);
+  }
+
   res.redirect('/blogs');
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

@@ -1,27 +1,28 @@
 <%- include('header') %>
 
-   <div class="EditContainer">
+    <div class="EditContainer">
         <h1>Edit Blog Post</h1>
         <p class="welcomeNote">Make changes to your blog post below:</p>
     </div>
-    
-    
+
+
     <div class="EditBlogArea">
 
         <form action="/edit/<%= blog.id %>" method="post">
-        <label for="Title">Blog Title</label><br>
-        <input type="text" name="BlogTitle" value="<%= blog.blogTitle %>" required>
-        <br>
-        <label for="Author">Author Name</label><br>
-        <input type="text" name="Author_Name" value="<%= blog.authorName %>" required>
-        <br>
-        <label for="content">Blog Content</label><br>
-        <textarea name="Content" id="Content" rows="10" cols="79" required><%= blog.content %></textarea>
-        <br>
-        <input class="EditInputButton" type="submit" value="Update">
+            <label for="Title">Blog Title</label><br>
+            <input type="text" name="BlogTitle" value="<%= blog.blogTitle %>" required>
+            <br>
+            <label for="Author">Author Name</label><br>
+            <input type="text" name="Author_Name" value="<%= blog.authorName %>" required>
+            <br>
+            <label for="content">Blog Content</label><br>
+            <textarea name="Content" id="Content" rows="10" cols="79" required><%= blog.content %></textarea>
+            <br>
+            <input class="EditInputButton" type="submit" value="Update">
         </form>
+
     </div>
 
 
 
-<%- include('footer') %>
+    <%- include('footer') %>
